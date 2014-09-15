@@ -25,3 +25,7 @@ node_modules
 dist
 .tmp
 app/bower_components
+
+# Generated Files
+app/styles/*.css
+app/styles/*.map
