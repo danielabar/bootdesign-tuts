@@ -12,9 +12,18 @@
   margin: 50px auto 0 auto;
 }
 
-.red {
-  background-color: @brand-danger;
+.column-marker {
   color: @gray-lighter;
   text-align: center;
   border: 1px dotted @gray-darker;
+}
+
+.red {
+  background-color: @brand-danger;
+  .column-marker
+}
+
+.green {
+  background-color: @brand-success;
+  .column-marker
 }
