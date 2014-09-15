@@ -10,3 +10,7 @@ Column classes go inside a div with class of `row`
 To take up the full width of a row, make the columns add up to 12.
 
 Any content in a cell will keep its width, and expand in height.
+
+## From Scratch
+
+Put everything in a container div.
