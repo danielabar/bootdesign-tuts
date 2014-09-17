@@ -11,6 +11,8 @@ To take up the full width of a row, make the columns add up to 12.
 
 Any content in a cell will keep its width, and expand in height.
 
-## From Scratch
+## Fonts
 
-Put everything in a container div.
+[Tutorial on pairing fonts](http://webdesign.tutsplus.com/articles/a-beginners-guide-to-pairing-fonts--webdesign-5706)
+
+[Google Fonts](http://www.google.com/fonts)
