@@ -49,7 +49,7 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost',
+        hostname: '0.0.0.0',
         livereload: 35729
       },
       livereload: {
@@ -241,8 +241,8 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>/bower_components/bootstrap/fonts/',
-          dest: '<%= yeoman.app %>/fonts/glyphicons',
+          cwd: '<%= yeoman.app %>/fonts/glyphicons',
+          dest: '<%= yeoman.dist %>/fonts/glyphicons',
           src: ['*']
         }]
       },
