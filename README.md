@@ -1,3 +1,11 @@
+# Designing in the Browser with Bootstrap
+
+My notes and project from Tuts Plus course [Designing in the Browser with Bootstrap](https://webdesign.tutsplus.com/courses/designing-in-the-browser-with-bootstrap)
+
+Basic idea: Skip the photoshopping, and use jump straight into the browser to try different colors, layouts etc.
+
+[Bootstrap 3](http://getbootstrap.com/customize/#less-variables) is used for rapid prototyping.
+
 ## Grid System
 
 To use the grid system, must be in a div with class of `container` or `container-fluid`.
