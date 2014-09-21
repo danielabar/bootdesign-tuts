@@ -1,6 +1,5 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "from-template.less";
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @icon-font-path:          "../fonts/glyphicons/";
 
 // http://www.smidswaterfont.com/
@@ -8,6 +7,11 @@
   font-family: "sw_light";
   src: url('../fonts/smidswater/SmidsLig.ttf'),
   url('SmidsLig.eot'); /* IE */
+}
+@font-face{
+  font-family: "sw_bold";
+  src: url('../fonts/smidswater/SmidsBol.ttf'),
+  url('SmidsBol.eot'); /* IE */
 }
 
 @font-size-base: 16px;
@@ -26,12 +30,19 @@
 @navbar-default-toggle-hover-bg: #4E5863;
 @navbar-default-border: #F3F0EE;
 
+@jumbotron-bg: #F3F0EE;
+
 @border-radius-base:        0px;
 @border-radius-large:       0px;
 @border-radius-small:       0px;
 
 body {
   padding-top: 70px;
+}
+
+h4 {
+  font-family: "sw_bold";
+  color: #EFA20F;
 }
 
 .column-marker {
@@ -60,4 +71,9 @@ body {
 
 .sub-marketing {
   margin: 0;
+}
+
+.adoptions {
+  background: rgba(90, 86, 83, 0.1);
+  // background: #F3F0EE;
 }
