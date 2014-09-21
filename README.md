@@ -2,7 +2,7 @@
 
 To use the grid system, must be in a div with class of `container` or `container-fluid`.
 
-Both are responsive, but `container-fluid` expands and contracts, 
+Both are responsive, but `container-fluid` expands and contracts,
 whereas `container` has a set of fixed widths it breaks on.
 
 Column classes go inside a div with class of `row`
@@ -16,3 +16,11 @@ Any content in a cell will keep its width, and expand in height.
 [Tutorial on pairing fonts](http://webdesign.tutsplus.com/articles/a-beginners-guide-to-pairing-fonts--webdesign-5706)
 
 [Google Fonts](http://www.google.com/fonts)
+
+## Color Tools
+
+[kuler](https://kuler.adobe.com/create/color-wheel/)
+
+[coleure](https://www.coleure.com)
+
+[contrast ratio](http://leaverou.github.io/contrast-ratio/)
