@@ -24,3 +24,7 @@ Any content in a cell will keep its width, and expand in height.
 [coleure](https://www.coleure.com)
 
 [contrast ratio](http://leaverou.github.io/contrast-ratio/)
+
+## Placeholder Images
+
+[Lorem Pixel](http://lorempixel.com/)
