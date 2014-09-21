@@ -73,6 +73,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
+          port: 9002,
           base: '<%= yeoman.dist %>'
         }
       }
@@ -244,6 +245,16 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.app %>/fonts/glyphicons',
           src: ['*']
         }]
+      },
+      fonts: {
+        files: [{
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/fonts/smidswater/',
+          dest: '<%= yeoman.dist %>/fonts/smidswater',
+          src: ['*']
+        }]
       }
     },
     concurrent: {
@@ -254,7 +265,19 @@ module.exports = function (grunt) {
         'svgmin',
         'htmlmin'
       ]
+    },
+
+    // Deploy to github
+    'gh-pages': {
+      dist: {
+        options: {
+          base: 'dist',
+          message: 'Deployed by grunt gh-pages'
+        },
+        src: '**/*'
+      }
     }
+
   });
 
   grunt.registerTask('serve', function (target) {
@@ -289,6 +312,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'copy:server',
+    'copy:fonts',
     'useminPrepare',
     'concurrent',
     'cssmin',
@@ -304,4 +328,8 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('preview', ['build', 'connect:dist:keepalive']);
+  grunt.registerTask('deploy', ['build', 'gh-pages:dist']);
+
 };
