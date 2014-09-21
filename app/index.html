@@ -23,6 +23,16 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a id="dCats" role="button" data-toggle="dropdown" data-target="#" href="/pets.html">
+              Cats <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dCats">
+              <li><a href="#">Shorthair</a></li>
+              <li><a href="#">Longhair</a></li>
+              <li><a href="#">Siamese</a></li>
+            </ul>
+          </li><!--//dropdown-->
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -124,6 +134,7 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/bootstrap.js -->
+  <script src="bower_components/bootstrap/js/dropdown.js"></script>
   <script src="bower_components/bootstrap/js/transition.js"></script>
   <script src="bower_components/bootstrap/js/carousel.js"></script>
   <!-- endbuild -->
