@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cat Rescue of Texas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Cat Rescue of Texas</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a id="dCats" role="button" data-toggle="dropdown" data-target="#" href="/pets.html">
+              Cats <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dCats">
+              <li><a href="#">Shorthair</a></li>
+              <li><a href="#">Longhair</a></li>
+              <li><a href="#">Siamese</a></li>
+            </ul>
+          </li><!--//dropdown-->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form role="form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!--//contact form -->
+
+    <!-- build:js scripts/main.js -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/bootstrap.js -->
+  <script src="bower_components/bootstrap/js/dropdown.js"></script>
+  <script src="bower_components/bootstrap/js/transition.js"></script>
+  <script src="bower_components/bootstrap/js/carousel.js"></script>
+  <!-- endbuild -->
+
+  </body>
+</html>
