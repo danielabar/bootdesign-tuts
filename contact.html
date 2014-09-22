@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Cat Rescue of Texas</a>
+          <a href="index.html" class="navbar-brand">Cat Rescue of Texas</a>
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
@@ -37,67 +37,61 @@
     </nav>
 
     <div class="container">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="http://lorempixel.com/900/500/cats/6" alt="three black cats abandoned in a parking lot">
-            <div class="carousel-caption">
-              So many cats are abandoned...
-            </div>
-          </div>
-          <div class="item">
-            <img src="http://lorempixel.com/900/500/cats/7" alt="cat">
-            <div class="carousel-caption">
-              They just need some love,
-            </div>
-          </div>
-          <div class="item">
-            <img src="http://lorempixel.com/900/500/cats/8" alt="cat">
-            <div class="carousel-caption">
-              and a forever home.
-            </div>
-          </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div><!--//carousel -->
 
-    <div class="adoptions">
-      <div class="container">
-        <div class="row sub-marketing">
-          <div class="col-lg-4">
-            <h4>Mr. Chuckles</h4>
-            <img src="http://lorempixel.com/350/180/cats/3" class="img-responsive" alt="Cat">
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          </div>
-          <div class="col-lg-4">
-            <h4>Apricat</h4>
-            <img src="http://lorempixel.com/350/180/cats/4" class="img-responsive" alt="Cat">
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          </div>
-          <div class="col-lg-4">
-            <h4>Jellie</h4>
-            <img src="http://lorempixel.com/350/180/cats/5" class="img-responsive" alt="Cat">
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          </div>
-        </div>
-      </div>
-    </div><!--//adoptions-->
+      <h1>Contact Us</h1>
+      <form class="form-horizontal">
+        <fieldset>
 
-    <div class="container">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="name">Your Name</label>
+            <div class="col-md-9">
+              <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="email">Your Email</label>
+            <div class="col-md-9">
+              <input id="email" name="email" type="text" placeholder="Enter your email address" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="message">Message</label>
+            <div class="col-md-9">
+              <textarea class="form-control" id="message" name="message" rows="5">What would you like to tell us?</textarea>
+            </div>
+          </div>
+
+          <!-- Multiple Checkboxes -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="subscribe"></label>
+            <div class="col-md-9">
+              <div class="checkbox">
+                <label for="subscribe-0">
+                  <input type="checkbox" name="subscribe" id="subscribe-0" value="1">
+                  Yes, please subscribe me to the cat rescue newsletter!
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="submit"></label>
+            <div class="col-md-9">
+              <button id="submit" name="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
 
       <div class="row marketing">
         <div class="col-lg-12">
@@ -125,7 +119,7 @@
         <p>&copy; Cat Rescue of Texas 2014</p>
       </div>
 
-    </div><!-- /container -->
+    </div><!--//container -->
 
     <script src="scripts/488e3e7a.main.js"></script>
 
