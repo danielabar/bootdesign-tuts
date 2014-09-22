@@ -39,28 +39,89 @@
     </nav>
 
     <div class="container">
-      <form role="form">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputFile">File input</label>
-          <input type="file" id="exampleInputFile">
-          <p class="help-block">Example block-level help text here.</p>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Check me out
-          </label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+
+      <h1>Contact Us</h1>
+      <form class="form-horizontal">
+        <fieldset>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="name">Your Name</label>
+            <div class="col-md-9">
+              <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="email">Your Email</label>
+            <div class="col-md-9">
+              <input id="email" name="email" type="text" placeholder="Enter your email address" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="message">Message</label>
+            <div class="col-md-9">
+              <textarea class="form-control" id="message" name="message" rows="5">What would you like to tell us?</textarea>
+            </div>
+          </div>
+
+          <!-- Multiple Checkboxes -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="subscribe"></label>
+            <div class="col-md-9">
+              <div class="checkbox">
+                <label for="subscribe-0">
+                  <input type="checkbox" name="subscribe" id="subscribe-0" value="1">
+                  Yes, please subscribe me to the cat rescue newsletter!
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="submit"></label>
+            <div class="col-md-9">
+              <button id="submit" name="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+
+        </fieldset>
       </form>
-    </div><!--//contact form -->
+
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h4>Subheading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti aperiam, non earum quasi alias veniam commodi, itaque quia, recusandae nam beatae. A eveniet fugiat asperiores illo, expedita porro sunt labore adipisci minima eos sit vitae velit cum fugit natus iste deserunt doloribus reiciendis placeat dolor dolorem iusto quae, eaque enim?</p>
+        </div>
+      </div>
+
+      <div class="row sub-marketing">
+        <div class="col-lg-4">
+          <h4>Subheading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem qui, maxime sit, dolore, aliquam ipsum aliquid quisquam modi, exercitationem minima? Omnis architecto temporibus quaerat ipsa natus corporis accusamus sed?</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Subheading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a nemo, repudiandae similique? Vitae ipsa, possimus amet sint fugiat? Temporibus, qui laborum vero deleniti enim dolor ea odit inventore ipsam!</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Subheading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur placeat deserunt praesentium architecto distinctio cumque itaque, veniam atque! Debitis quod magnam neque consequuntur, itaque consectetur deleniti quaerat, tempora alias totam.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Cat Rescue of Texas 2014</p>
+      </div>
+
+    </div><!--//container -->
 
     <!-- build:js scripts/main.js -->
   <script src="bower_components/jquery/jquery.js"></script>
