@@ -36,3 +36,7 @@ Any content in a cell will keep its width, and expand in height.
 ## Placeholder Images
 
 [Lorem Pixel](http://lorempixel.com/)
+
+## Button Design
+
+[Principles for Successful Button Design](https://webdesign.tutsplus.com/articles/principles-for-successful-button-design--webdesign-6094)
