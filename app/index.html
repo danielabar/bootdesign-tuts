@@ -15,27 +15,35 @@
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Cat Rescue of Texas</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">Cat Rescue of Texas</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="dropdown">
-            <a id="dCats" role="button" data-toggle="dropdown" data-target="#" href="/pets.html">
-              Cats <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dCats">
-              <li><a href="#">Shorthair</a></li>
-              <li><a href="#">Longhair</a></li>
-              <li><a href="#">Siamese</a></li>
-            </ul>
-          </li><!--//dropdown-->
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a id="dCats" role="button" data-toggle="dropdown" data-target="#" href="/pets.html">
+                Cats <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dCats">
+                <li><a href="#">Shorthair</a></li>
+                <li><a href="#">Longhair</a></li>
+                <li><a href="#">Siamese</a></li>
+              </ul>
+            </li><!--//dropdown-->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--//navbar-collapse-->
+      </div><!--//container-->
     </nav>
 
     <div class="container">
@@ -134,6 +142,7 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/bootstrap.js -->
+  <script src="bower_components/bootstrap/js/collapse.js"></script>
   <script src="bower_components/bootstrap/js/dropdown.js"></script>
   <script src="bower_components/bootstrap/js/transition.js"></script>
   <script src="bower_components/bootstrap/js/carousel.js"></script>

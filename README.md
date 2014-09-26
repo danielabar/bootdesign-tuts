@@ -40,3 +40,8 @@ Any content in a cell will keep its width, and expand in height.
 ## Button Design
 
 [Principles for Successful Button Design](https://webdesign.tutsplus.com/articles/principles-for-successful-button-design--webdesign-6094)
+
+## Responsive Considerations
+
+As screen width decreases, not enough room for menu items so it becomes taller as items stack on top of each other, and covers the content.
+
